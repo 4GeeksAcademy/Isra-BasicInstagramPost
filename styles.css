@@ -8,18 +8,23 @@ body {
     padding: 60px;
     margin: 0;
   }
+  
   .post {
     align-items: center;
     justify-content: center;
     background-color: white;
-    width: 500px;
+    /*Con esto ajusto el anchp del post, pongo el máximo y luego al 100% La altura es automatica para mantener proporciones*/
+    max-width: 500px; 
+    width: 100%; 
     height: auto;
   }
+  
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  
   .header .fa-brands {
     padding: 0px 10px 0px 20px;
     font-size: 35px;
@@ -33,9 +38,10 @@ body {
   
   .image img {
     max-width: 100%;
-    max-height: 100%;
-    width: 500px;
-    height: 500px;
+    /*Con esto mantengo las proporciones de la imagen*/
+    height: auto; 
+    /*Con esto la img se ajusta al contenedor*/
+    width: 100%; 
     object-fit: cover;
   }
   
@@ -46,9 +52,12 @@ body {
     padding: 8px 10px 5px 10px;
     font-size: 20px;
   }
+  
   .icons i:nth-child(-n + 3) {
-    margin-right: 10px; /* Añade un espacio entre los tres primeros íconos */
+    /*Con -n+3 selecciono los tres primeros iconos y les añado un espacio entre si con el margin*/
+    margin-right: 10px; 
   }
+  
   .icons i:last-child {
     margin-left: auto;
     padding-right: 10px;
